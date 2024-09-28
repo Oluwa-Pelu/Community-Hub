@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen" style="background: linear-gradient(to right, indigo, lightgray);">
+    <div class="max-w-lg mx-auto bg-gray-800 text-white p-7 rounded-lg shadow-lg">
+        <!-- Step 1 -->
+        <div id="step-1">
+            <!-- Progress Bar -->
+            <div class="relative pt-1">
+                <div class="flex mb-2 items-center justify-between">
+                    <div>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-500 bg-indigo-200">
+                            Step 1 of 3
+                        </span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs font-semibold inline-block text-indigo-200">33%</span>
+                    </div>
+                </div>
+                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
+                    <div style="width:33.33%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+                </div>
+            </div>
+
+            <!-- Form Heading -->
+            <h2 class="text-4xl font-semibold mb-6 text-center text-indigo-400">Create Your Account</h2>
+
+            <!-- Full Name Input -->
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+            </div>
+
+            <!-- Username Input -->
+            <div class="mb-4">
+                <label for="username" class="block text-sm font-medium text-gray-300">Username</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+            </div>
+
+            <!-- Phone Number Input -->
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-300">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+            </div>
+
+            <!-- Password and Confirm Password Inputs -->
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-300">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <label for="confirm_password" class="block text-sm font-medium text-gray-300">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+                </div>
+            </div>
+
+            <button onclick="goToNextStep()" class="w-full bg-indigo-600 text-white font-semibold rounded-full py-3 hover:bg-indigo-700 transition duration-200">
+                Continue to Step 2
+            </button>
+
+            <!-- Or Sign Up With -->
+            <p class="text-center text-sm text-gray-400 mb-4">or sign up with</p>
+
+            <!-- Social Media Sign-Up Options -->
+                <div class="mb-4 flex justify-center"> 
+                    <button class="w-full bg-white text-black rounded-full py-1 mb-2 flex items-center justify-center mr-2">
+                        <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="w-5 h-5 mr-2" alt="Google Logo">
+                        With Google
+                    </button>
+                    <button class="w-full bg-white text-black rounded-full py-1 mb-2 flex items-center justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/505px-Apple_logo_black.svg.png" class="w-5 h-5 mr-2" alt="Apple Logo">
+                        With Apple
+                    </button>
+                </div>
+
+            <!-- Already have an account -->
+            <p class="text-center text-sm text-gray-400">
+                Already have an account? <a href="sign_in.html" class="text-indigo-400 hover:underline">Sign in</a>
+            </p>
+        </div>
+
+            <div class="font-bold mt-4 text-center mx-auto">
+                <a href="sign_in.html"><button class="text-gray-500 hover:text-white">Close</button></a>
+            </div>
+
+        <!-- Step 2 -->
+        <div id="step-2" class="hidden">
+            <div class="relative pt-1">
+                <div class="flex mb-2 items-center justify-between">
+                    <div>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-500 bg-indigo-200">
+                            Step 2 of 3
+                        </span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs font-semibold inline-block text-indigo-200">66%</span>
+                    </div>
+                </div>
+                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
+                    <div style="width:66.66%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+                </div>
+            </div>
+
+            <!-- Form Heading -->
+            <h2 class="text-4xl font-semibold mb-6 text-center text-indigo-400">Create Your Account</h2>
+
+            <!-- Email Input -->
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+            </div>
+
+            <!-- Verification Code Input -->
+            <div class="mb-4">
+                <label for="verification_code" class="block text-sm font-medium text-gray-300">Verification Code</label>
+                <input type="text" id="verification_code" name="verification_code" placeholder="Enter the code sent to your email/phone" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+            </div>
+
+            <!-- Address Input -->
+            <div class="mb-4">
+                <label for="address" class="block text-sm font-medium text-gray-300">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg px-4 py-3 mt-1 focus:ring-2 focus:ring-indigo-500">
+            </div>
+
+            <button onclick="goToNextStep()" class="w-full bg-indigo-600 text-white font-semibold rounded-full py-3 hover:bg-indigo-700 transition duration-200 mb-1">
+                Continue to Step 3
+            </button>
+
+            <div class="text-center">
+                <button onclick="goToPreviousStep()" class="text-sm text-gray-400 hover:text-white mb-2">Go Back</button>
+            </div>
+
+            <!-- Or Sign Up With -->
+            <p class="text-center text-sm text-gray-400 mb-4">or sign up with</p>
+
+            <!-- Social Media Sign-Up Options -->
+            <div class="mb-4 flex justify-center">
+                <button class="w-full bg-white text-black rounded-full py-1 mb-2 flex items-center justify-center mr-2">
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="w-5 h-5 mr-2" alt="Google Logo">
+                    With Google
+                </button>
+                <button class="w-full bg-white text-black rounded-full py-1 mb-2 flex items-center justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/505px-Apple_logo_black.svg.png" class="w-5 h-5 mr-2" alt="Apple Logo">
+                    With Apple
+                </button>
+            </div>
+
+            <!-- Already have an account -->
+            <p class="text-center text-sm text-gray-400">
+                Already have an account? <a href="sign_in.html" class="text-indigo-400 hover:underline">Sign in</a>
+            </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="step-3" class="hidden">
+            <div class="relative pt-1">
+                <div class="flex mb-2 items-center justify-between">
+                    <div>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-500 bg-indigo-200">
+                            Step 3 of 3
+                        </span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs font-semibold inline-block text-indigo-200">100%</span>
+                    </div>
+                </div>
+                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
+                    <div style="width:99.99%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+                </div>
+            </div>
+
+            <!-- Form Heading -->
+            <h2 class="text-4xl font-semibold mb-6 text-center text-indigo-400">Create Your Account</h2>
+
+            <!-- Profile Picture Input -->
+            <div class="mb-4">
+                <label for="profile_picture" class="block text-sm font-medium text-gray-300 pb-6">Profile Picture (Optional)</label>
+                <div class="flex items-center">
+                    <img id="profilePreview" class="w-16 h-16 rounded-full border-2 border-gray-600 mr-4" src="https://via.placeholder.com/150" alt="Profile Preview">
+                    <input type="file" id="profile_picture" name="profile_picture" class="text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100">
+                </div>
+            </div>
+
+            <!-- Public Profile Checkbox -->
+            <div class="mb-6">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" class="form-checkbox bg-gray-700 border-gray-600 focus:ring-indigo-500 h-5 w-5 text-indigo-600">
+                    <span class="ml-2 text-sm text-gray-300">Make my profile public</span>
+                </label>
+            </div>
+
+            <!-- Create Account Button -->
+            <button id="createAccountBtn" class="w-full bg-indigo-600 text-white font-semibold rounded-full py-3 hover:bg-indigo-700 transition duration-200 mb-4">
+                Create Account
+            </button>
+
+            <!-- Terms Checkbox -->
+            <div id="termsCheckbox" class="mb-6 mt-4 hidden">
+                <label class="inline-flex items-center">
+                    <span class="ml-2 text-sm text-gray-300">Read the 
+                        <button class="text-indigo-400 hover:underline" onclick="goToNextStep()">Terms & Conditions</button> Before joining
+                    </span>
+                </label>
+            </div>
+
+            <script>
+                // JavaScript to toggle visibility of the checkbox
+                document.getElementById('createAccountBtn').addEventListener('click', function() {
+                    const termsCheckbox = document.getElementById('termsCheckbox');
+                    termsCheckbox.classList.toggle('hidden');
+                });
+            </script>
+
+            <div class="text-center">
+                <button onclick="goToPreviousStep()" class="text-sm text-gray-400 hover:underline">Go Back</button>
+            </div>
+        </div>
+
+                      <!-- Terms and Conditions -->
+<div class="p-6 bg-gray-800 rounded-lg text-white hidden md:px-auto px-0" id="step-4">
+    <div class="pb-2 flex justify-center items-right">
+        <h2 class="text-2xl font-semibold mb-3 text-indigo-400 md:text-center">Terms and Conditions</h2>
+        <botton><i class="fa-solid fa-arrow-left font-900 text-3xl text-end text-indigo-400 md:pl-32 pl-8" onclick="goToPreviousStep()"></i></botton>
+    </div>
+    <p class="mb-4 mt-2">
+        By creating an account on <strong>Community Hub</strong>, you agree to the following terms and conditions. Please read them carefully:
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">1. Acceptance of Terms</h3>
+    <p class="mb-4">
+        By registering an account on <strong>Community Hub</strong>, you agree to comply with these terms and conditions. These terms apply to all users of the platform. If you do not agree, please do not sign up or use the platform.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">2. User Accounts</h3>
+    <p class="mb-4">
+        - You are responsible for maintaining the confidentiality of your account login credentials and for any activities that occur under your account.<br>
+        - You must provide accurate, complete, and current information during registration.<br>
+        - You must not create an account using false information or on behalf of someone else without permission.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">3. Privacy and Data Use</h3>
+    <p class="mb-4">
+        - We respect your privacy and are committed to protecting your personal information. Please review our <a href=""><strong>Privacy Policy</strong></a> for details on how your data is collected, stored, and used.<br>
+        - By using <strong>Community Hub</strong>, you consent to the collection and use of your information as outlined in the Privacy Policy.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">4. User Conduct</h3>
+    <p class="mb-4">
+        - You agree to use <strong>Community Hub</strong> only for lawful purposes.<br>
+        - You must not post or share content that is offensive, defamatory, obscene, or violates the rights of others.<br>
+        - Harassment, abuse, or discriminatory behavior is strictly prohibited.<br>
+        - Any attempt to disrupt or misuse the platform will result in immediate termination of your account.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">5. Community Guidelines</h3>
+    <p class="mb-4">
+        - Engage respectfully with other members. Disagreements are allowed, but personal attacks, bullying, or hate speech will not be tolerated.<br>
+        - Users are encouraged to report any inappropriate behavior through our reporting system.<br>
+        - Users found violating these guidelines may face temporary suspension or permanent removal from the platform.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">6. Content Ownership</h3>
+    <p class="mb-4">
+        - You retain ownership of the content you post, but by sharing content on <strong>Community Hub</strong>, you grant us the right to display and distribute it on our platform.<br>
+        - You are responsible for the content you post and warrant that it does not violate any laws or infringe on the rights of others.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">7. Termination of Accounts</h3>
+    <p class="mb-4">
+        - <strong>Community Hub</strong> reserves the right to suspend or terminate your account if you violate these terms or engage in activities that harm the platform or its users.<br>
+        - You may terminate your account at any time by contacting us.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">8. Changes to Terms</h3>
+    <p class="mb-4">
+        - <strong>Community Hub</strong> reserves the right to modify these terms at any time. Changes will be posted on the platform, and continued use of the service after such changes constitutes acceptance.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">9. Limitation of Liability</h3>
+    <p class="mb-4">
+        - <strong>Community Hub</strong> will not be liable for any damages resulting from the use or inability to use the platform.<br>
+        - We make no guarantees regarding the accuracy, reliability, or security of the platform and its content.
+    </p>
+
+    <h3 class="text-xl font-bold mt-4 mb-2 text-indigo-300">10. Governing Law</h3>
+    <p class="mb-4">
+        These terms are governed by and construed in accordance with the laws of [Country/State]. Any disputes arising from these terms will be resolved in the courts of [Jurisdiction].
+    </p>
+
+    <p class="mt-6">
+        By clicking "I agree" or creating an account, you confirm that you have read, understood, and agree to these terms and conditions.
+    </p>
+
+    <input type="checkbox" class="form-checkbox bg-gray-700 border-gray-600 focus:ring-indigo-500 h-5 w-5 text-indigo-600 mt-6">
+        <span class="ml-2 text-sm text-gray-300 mt-5">I agree to the 
+            <a href="#" class="text-indigo-400 hover:underline">Terms & Conditions</a>
+        </span>
+</div>
+
+
+    </div>
+
+    <!-- JavaScript to control steps -->
+    <script>
+        let currentStep = 1;
+
+        function goToNextStep() {
+            document.getElementById(`step-${currentStep}`).classList.add('hidden');
+            currentStep++;
+            document.getElementById(`step-${currentStep}`).classList.remove('hidden');
+        }
+
+        function goToPreviousStep() {
+            document.getElementById(`step-${currentStep}`).classList.add('hidden');
+            currentStep--;
+            document.getElementById(`step-${currentStep}`).classList.remove('hidden');
+        }
+
+        // Profile Picture Preview Script
+        document.getElementById('profile_picture').addEventListener('change', function(event) {
+            const [file] = event.target.files;
+            if (file) {
+                document.getElementById('profilePreview').src = URL.createObjectURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

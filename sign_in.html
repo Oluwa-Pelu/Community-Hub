@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub - Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen" style="background: linear-gradient(to right, indigo, lightgray);">
+
+    <!-- Sign In Modal -->
+    <div class="bg-gray-900 text-white max-w-sm w-full rounded-lg shadow-lg px-10 pt-5 pb-10">
+        <div class="justify-between flex pb-5">
+            <div><img src="logo.webp" alt="logo" class="w-15 h-10 mr-5"></div>
+            <div class="font-bold text-3xl">
+                <a href="index.html"><button class="text-gray-500 hover:text-white">✕</button></a>
+            </div>
+        </div>    
+        <h2 class="text-2xl font-bold text-center mb-6">Sign in to Community Hub</h2>
+
+        <!-- Sign in options -->
+        <div class="mb-4">
+            <a href="https://accounts.google.com/signin">
+                <button class="w-full bg-white text-black rounded-full py-2 mb-3 flex items-center justify-center">
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="w-5 h-5 mr-2" alt="Google Logo">
+                    Sign in with Google
+                </button>    
+            </a>
+            
+            <a href="https://appleid.apple.com/auth/authorize">
+                <button class="w-full bg-white text-black rounded-full py-2 mb-3 flex items-center justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/505px-Apple_logo_black.svg.png" class="w-5 h-5 mr-2" alt="Apple Logo">
+                    Sign in with Apple
+                </button>
+            </a>
+        </div>
+
+        <div class="flex items-center justify-center my-4">
+            <hr class="w-full border-gray-600">
+            <span class="px-3 text-gray-500">or</span>
+            <hr class="w-full border-gray-600">
+        </div>
+
+        <!-- Email sign in form -->
+        <form>
+            <input type="text" placeholder="Phone, email, or username" class="w-full bg-gray-800 text-white rounded-lg p-3 mb-4 focus:outline-none">
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg py-2">
+                Next
+            </button>
+            <a href="#" class="block text-center text-indigo-400 mt-4">Forgot password?</a>
+        </form>
+
+        <p class="text-center text-gray-500 mt-6">
+            Don’t have an account? <a href="sign_up.html" class="text-indigo-400">Sign up</a>
+        </p>
+    </div>
+
+</body>
+</html>
