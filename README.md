@@ -12,19 +12,15 @@ Here's a breakdown of each file and what it does:
 |---------------------|-----------------|
 | `index.html`        | Homepage of the Community Hub. Main entry point.<br>![Galaxy-Fold2-127 0 0 1](https://github.com/user-attachments/assets/436f011f-8201-4085-bece-7811037d2548)|
 | `about.html`        | About the Community Hub and its purpose. <br>![Macbook-Air-127 0 0 1 (1)](https://github.com/user-attachments/assets/3c14181b-92e8-4e8b-aeab-a73cc8096b8b)|
-| `contact.html`      | Contact form/page for users to reach out. <br> |
-| `help_center.html`  | Help center and FAQs for user support. <br> |
-| `sign_in.html`      | Login page for users to access their account. <br>|
-| `sign_up.html`      | Registration page for new users. <br>_ |
-| `logo.webp`         ||
+| `contact.html`      | Contact form/page for users to reach out. <br>![image](https://github.com/user-attachments/assets/845ca47a-7684-4a31-914a-cc7d03f24186)|
+| `help_center.html`  | Help center and FAQs for user support. <br>![image](https://github.com/user-attachments/assets/47174e30-34f8-49dd-b975-091a167da00b)|
+| `sign_in.html`      | Login page for users to access their account. <br>![Galaxy-Tab-S7-127 0 0 1](https://github.com/user-attachments/assets/1da877cf-5efa-4c0b-8cbe-7b23aaee6abf)|
+| `sign_up.html`      | Registration page for new users. <br>![image](https://github.com/user-attachments/assets/c40aee9f-b520-42e6-9cf6-1293ba469729)|
+| `logo.webp`         | ![image](https://github.com/user-attachments/assets/a248cf6e-a206-42bd-9e03-ad963565a18a)|
+
 
 ---
 
-## 🖼️ Screenshots
-
-> 🔻 Replace the lines above marked _“Need a screenshot...”_ with actual screenshots after uploading.
-
----
 
 ## 📱 Responsiveness
 
